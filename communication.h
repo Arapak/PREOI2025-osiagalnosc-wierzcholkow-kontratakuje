@@ -327,7 +327,7 @@ std::tuple<ANSWER_TYPE, int, size_t> masterMain() {
         auto type = receive<messageType>(otherChild(running_child), false);
         if (type == messageType::ANSWER) {
             auto other_answer = receive<ANSWER_TYPE>(otherChild(running_child), false);
-            if (answer != other_answer)
+            if (!(answer == other_answer))
                 Master::exitGracefully(ExitType::ERROR, ErrorType::BOTH_CHILDREN_ANSWERED_WITH_DIFFERENT_VALUES);
         }
     }
