@@ -30,12 +30,12 @@ std::string printData(const DATA_TYPE &data) {
 
 template <>
 void Child::run<CHILD_A>() {
-    initA(n, edgesA);
+    mainA(n, edgesA);
 }
 
 template <>
 void Child::run<CHILD_B>() {
-    initB(n, edgesB);
+    mainB(n, edgesB);
 }
 
 void answer(ANSWER_TYPE x) { Child::answer(x); }

@@ -4,5 +4,5 @@
 
 using namespace std;
 
-void initA(int n, vector<pair<int, int>> edges) { answer({0, 1}); }
-void initB(int n, vector<pair<int, int>> edges) {}
+void mainA(int n, vector<pair<int, int>> edges) { answer({0, 1}); }
+void mainB(int n, vector<pair<int, int>> edges) {}
