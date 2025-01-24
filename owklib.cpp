@@ -35,7 +35,7 @@ void Child::run<CHILD_A>() {
 
 template <>
 void Child::run<CHILD_B>() {
-    mainB(n, edgesB);
+    mainK(n, edgesB);
 }
 
 void answer(ANSWER_TYPE x) { Child::answer(x); }
