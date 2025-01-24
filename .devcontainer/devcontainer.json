@@ -6,7 +6,7 @@
   },
   "customizations": {
     "codespaces": {
-      "openFiles": ["com.cpp"]
+      "openFiles": ["owk.cpp"]
     }
   }
 }
